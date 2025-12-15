@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Personal Website</title>
+<link rel="stylesheet" href="css/style1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="sidebar">
+  <h2>My Menu</h2>
+	<a href="index.html">Home</a>
+	<a href="aboutme.html">About Me</a>
+	<a href="portfolio.html">Port Folio</a>
+	<a href="video.html">Video</a>
+	<a href="contact.html">Contacts</a>
+</div>
+
+<div class="content">
+<h1>My Portfolio</h1>
+<p> <strong>These are some personal works and assignments I have completed during my studies.</strong></p>
+
+<div id="portfolio-buttons">
+  <button class="active" onclick="showCategory('3d', this)">3D</button>
+  <button onclick="showCategory('video', this)">Video Edits</button>
+  <button onclick="showCategory('posters', this)">Posters</button>
+</div>	
+
+<div id="3d" class="portfolio-category">
+  <h2>3D Projects</h2>
+<p>
+This project involves Blender software skills, which includes modeling, animation, lighting and so on.
+</p>
+<img src="image/animation1.png" width="300">
+<img src="image/animation2.png" width="250">
+<img src="image/animation3.png" width="370">
+	</div>
+	
+<div id="video" class="portfolio-category" style="display:none;">
+  <h2>Video Edits</h2>	
+<p>
+These projects were done in Davinci Resolve Software & CapCut, it involves my editing skills.
+</p>
+<img src="image/video1.png" width="400">
+<img src="image/video2.png" width="375">
+	</div>
+	
+<div id="posters" class="portfolio-category" style="display:none;">
+  <h2>Posters</h2>	
+<p>
+These projects were done in Canva & Adobe Photoshop, it involves my creative thinking skills.
+</p>
+<img src="image/edit1.png" width="500">
+<img src="image/edit2.png" width="200">
+	</div>
+	
+	</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
