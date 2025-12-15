@@ -1,0 +1,213 @@
+/* =====================
+   COLOR THEME
+
+:root {
+  --plum-dark: #201d39;
+  --violet: #514575;
+  --misty-violet: #a79dda;
+  --amber: #e58500;
+  --honey: #ffc451;
+}
+===================== */
+
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #F4F4F4;
+  color: #201D39;
+}
+
+/* Sidebar Menu */
+.sidebar {
+  width: 220px;
+  height: 150vh;
+  background: #201D39;
+  position: fixed;
+  padding: 20px;
+}
+
+.sidebar h2 {
+	color: #FFC451;
+  text-align: center;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+	margin: 5px 0;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+	border-radius: 6px;
+}
+
+.sidebar a:hover {
+  background: #e58500;
+  color: black;
+}
+
+/* Homepage intro section */
+.intro-container {
+  display: flex;            
+  align-items: center;   
+  justify-content: space-between;
+  gap: 40px;               
+  margin-bottom: 40px;
+}
+
+/* Text styling */
+.intro-text {
+  flex: 1;                 
+}
+
+/* Image styling */
+.intro-image {
+  flex: 1;                 
+  text-align: right;        
+}
+
+.intro-image img {
+  max-width: 100%;         
+  height: auto;
+  border-radius: 12px;   
+
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .intro-image {
+    text-align: center;
+  }
+}
+	
+.portfolio-category {
+  transition: opacity 0.5s ease;
+}
+
+.portfolio-buttons {
+  display: flex;          
+  justify-content: flex-start;
+  gap: 15px;              
+  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+
+.portfolio-buttons button {
+  background: #e58500;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolio-buttons button:hover {
+  background: #514575;
+  transform: scale(1.05); 
+}
+
+.portfolio-buttons button.active {
+  background: #ffc451;
+  color: #201d39;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.portfolio-category img,
+.portfolio-category video {
+  margin: 10px;
+  border-radius: 8px;
+}
+
+
+
+/* Content Area */
+.content {
+  margin-left: 240px;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+/*Heading*/
+h1, h2, h3 {
+	color: #201d39;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+button, input[type="submit"] {
+  background: #e58500;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: #514575;
+}
+
+/* Table */
+table {
+  background: white;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+}
+
+.content {
+  animation: fadeIn 1s ease-in;
+}
+
+/* Images */
+img {
+  margin: 10px;
+  border-radius: 8px;
+}
+
+video {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
